@@ -1,0 +1,2694 @@
+<root>
+  <buffer file="/usr/include/stdio.h">
+    <define name="_STDIO_H" type="number" value="1" />
+  </buffer>
+  <buffer file="/usr/include/features.h">
+    <define name="_FEATURES_H" type="number" value="1" />
+    <define name="_DEFAULT_SOURCE" type="number" value="1" />
+    <define name="__USE_ISOC11" type="number" value="1" />
+    <define name="__USE_POSIX_IMPLICITLY" type="number" value="1" />
+    <define name="_POSIX_SOURCE" type="number" value="1" />
+    <define name="_POSIX_C_SOURCE" type="number" value="200809L" />
+    <define name="__USE_POSIX" type="number" value="1" />
+    <define name="__USE_POSIX2" type="number" value="1" />
+    <define name="__USE_POSIX199309" type="number" value="1" />
+    <define name="__USE_POSIX199506" type="number" value="1" />
+    <define name="__USE_XOPEN2K" type="number" value="1" />
+    <define name="__USE_ISOC95" type="number" value="1" />
+    <define name="__USE_ISOC99" type="number" value="1" />
+    <define name="__USE_XOPEN2K8" type="number" value="1" />
+    <define name="_ATFILE_SOURCE" type="number" value="1" />
+    <define name="__USE_MISC" type="number" value="1" />
+    <define name="__USE_ATFILE" type="number" value="1" />
+    <define name="__USE_FORTIFY_LEVEL" type="number" value="0" />
+  </buffer>
+  <buffer file="/usr/include/stdc-predef.h">
+    <define name="_STDC_PREDEF_H" type="number" value="1" />
+    <define name="__STDC_IEC_559__" type="number" value="1" />
+    <define name="__STDC_IEC_559_COMPLEX__" type="number" value="1" />
+    <define name="__STDC_ISO_10646__" type="number" value="201304L" />
+    <define name="__STDC_NO_THREADS__" type="number" value="1" />
+  </buffer>
+  <buffer file="/usr/include/features.h">
+    <define name="__GNU_LIBRARY__" type="number" value="6" />
+    <define name="__GLIBC__" type="number" value="2" />
+    <define name="__GLIBC_MINOR__" type="number" value="22" />
+  </buffer>
+  <buffer file="/usr/include/sys/cdefs.h">
+    <define name="_SYS_CDEFS_H" type="number" value="1" />
+  </buffer>
+  <buffer file="/usr/lib/clang/3.6.2/include/stddef.h">
+    <typedef name="size_t">
+      <builtin name="unsigned long" />
+    </typedef>
+  </buffer>
+  <buffer file="/usr/include/bits/types.h">
+    <define name="_BITS_TYPES_H" type="number" value="1" />
+  </buffer>
+  <buffer file="/usr/include/bits/wordsize.h">
+    <define name="__WORDSIZE" type="number" value="64" />
+    <define name="__WORDSIZE_TIME64_COMPAT32" type="number" value="1" />
+    <define name="__SYSCALL_WORDSIZE" type="number" value="64" />
+  </buffer>
+  <buffer file="/usr/include/bits/types.h">
+    <typedef name="__u_char">
+      <builtin name="unsigned char" />
+    </typedef>
+    <typedef name="__u_short">
+      <builtin name="unsigned short" />
+    </typedef>
+    <typedef name="__u_int">
+      <builtin name="unsigned int" />
+    </typedef>
+    <typedef name="__u_long">
+      <builtin name="unsigned long" />
+    </typedef>
+    <typedef name="__int8_t">
+      <builtin name="signed char" />
+    </typedef>
+    <typedef name="__uint8_t">
+      <builtin name="unsigned char" />
+    </typedef>
+    <typedef name="__int16_t">
+      <builtin name="short" />
+    </typedef>
+    <typedef name="__uint16_t">
+      <builtin name="unsigned short" />
+    </typedef>
+    <typedef name="__int32_t">
+      <builtin name="int" />
+    </typedef>
+    <typedef name="__uint32_t">
+      <builtin name="unsigned int" />
+    </typedef>
+    <typedef name="__int64_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__uint64_t">
+      <builtin name="unsigned long" />
+    </typedef>
+    <typedef name="__quad_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__u_quad_t">
+      <builtin name="unsigned long" />
+    </typedef>
+  </buffer>
+  <buffer file="/usr/include/bits/typesizes.h">
+    <define name="_BITS_TYPESIZES_H" type="number" value="1" />
+    <define name="__OFF_T_MATCHES_OFF64_T" type="number" value="1" />
+    <define name="__INO_T_MATCHES_INO64_T" type="number" value="1" />
+    <define name="__FD_SETSIZE" type="number" value="1024" />
+  </buffer>
+  <buffer file="/usr/include/bits/types.h">
+    <typedef name="__dev_t">
+      <builtin name="unsigned long" />
+    </typedef>
+    <typedef name="__uid_t">
+      <builtin name="unsigned int" />
+    </typedef>
+    <typedef name="__gid_t">
+      <builtin name="unsigned int" />
+    </typedef>
+    <typedef name="__ino_t">
+      <builtin name="unsigned long" />
+    </typedef>
+    <typedef name="__ino64_t">
+      <builtin name="unsigned long" />
+    </typedef>
+    <typedef name="__mode_t">
+      <builtin name="unsigned int" />
+    </typedef>
+    <typedef name="__nlink_t">
+      <builtin name="unsigned long" />
+    </typedef>
+    <typedef name="__off_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__off64_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__pid_t">
+      <builtin name="int" />
+    </typedef>
+  </buffer>
+  <buffer>
+    <struct name="41720304" size="8">
+      <field name="__val" offset="0">
+        <array size="2">
+          <builtin name="int" />
+        </array>
+      </field>
+    </struct>
+  </buffer>
+  <buffer file="/usr/include/bits/types.h">
+    <typedef name="__fsid_t">
+      <struct name="41720304" />
+    </typedef>
+    <typedef name="__clock_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__rlim_t">
+      <builtin name="unsigned long" />
+    </typedef>
+    <typedef name="__rlim64_t">
+      <builtin name="unsigned long" />
+    </typedef>
+    <typedef name="__id_t">
+      <builtin name="unsigned int" />
+    </typedef>
+    <typedef name="__time_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__useconds_t">
+      <builtin name="unsigned int" />
+    </typedef>
+    <typedef name="__suseconds_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__daddr_t">
+      <builtin name="int" />
+    </typedef>
+    <typedef name="__key_t">
+      <builtin name="int" />
+    </typedef>
+    <typedef name="__clockid_t">
+      <builtin name="int" />
+    </typedef>
+    <typedef name="__timer_t">
+      <pointer>
+        <builtin name="void" />
+      </pointer>
+    </typedef>
+    <typedef name="__blksize_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__blkcnt_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__blkcnt64_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__fsblkcnt_t">
+      <builtin name="unsigned long" />
+    </typedef>
+    <typedef name="__fsblkcnt64_t">
+      <builtin name="unsigned long" />
+    </typedef>
+    <typedef name="__fsfilcnt_t">
+      <builtin name="unsigned long" />
+    </typedef>
+    <typedef name="__fsfilcnt64_t">
+      <builtin name="unsigned long" />
+    </typedef>
+    <typedef name="__fsword_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__ssize_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__syscall_slong_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__syscall_ulong_t">
+      <builtin name="unsigned long" />
+    </typedef>
+    <typedef name="__loff_t">
+      <typedef name="__off64_t" />
+    </typedef>
+    <typedef name="__qaddr_t">
+      <pointer>
+        <typedef name="__quad_t" />
+      </pointer>
+    </typedef>
+    <typedef name="__caddr_t">
+      <pointer>
+        <builtin name="char" />
+      </pointer>
+    </typedef>
+    <typedef name="__intptr_t">
+      <builtin name="long" />
+    </typedef>
+    <typedef name="__socklen_t">
+      <builtin name="unsigned int" />
+    </typedef>
+  </buffer>
+  <buffer file="/usr/include/stdio.h">
+    <struct name="_IO_FILE" />
+    <typedef name="FILE">
+      <struct name="_IO_FILE" />
+    </typedef>
+    <define name="__FILE_defined" type="number" value="1" />
+    <typedef name="__FILE">
+      <struct name="_IO_FILE" />
+    </typedef>
+    <define name="____FILE_defined" type="number" value="1" />
+  </buffer>
+  <buffer file="/usr/include/_G_config.h">
+    <define name="_G_config_h" type="number" value="1" />
+  </buffer>
+  <buffer file="/usr/include/wchar.h">
+    <define name="____mbstate_t_defined" type="number" value="1" />
+    <struct name="41681088" size="8">
+      <field name="__count" offset="0">
+        <builtin name="int" />
+      </field>
+      <union name="41681344" size="4">
+        <field name="__wch" offset="0">
+          <builtin name="unsigned int" />
+        </field>
+        <field name="__wchb" offset="0">
+          <array size="4">
+            <builtin name="char" />
+          </array>
+        </field>
+      </union>
+      <field name="__value" offset="4">
+        <union name="41681344" />
+      </field>
+    </struct>
+    <typedef name="__mbstate_t">
+      <struct name="41681088" />
+    </typedef>
+  </buffer>
+  <buffer file="/usr/include/_G_config.h">
+    <struct name="41682144" size="16">
+      <field name="__pos" offset="0">
+        <typedef name="__off_t" />
+      </field>
+      <field name="__state" offset="8">
+        <typedef name="__mbstate_t" />
+      </field>
+    </struct>
+    <typedef name="_G_fpos_t">
+      <struct name="41682144" />
+    </typedef>
+    <struct name="41682736" size="16">
+      <field name="__pos" offset="0">
+        <typedef name="__off64_t" />
+      </field>
+      <field name="__state" offset="8">
+        <typedef name="__mbstate_t" />
+      </field>
+    </struct>
+    <typedef name="_G_fpos64_t">
+      <struct name="41682736" />
+    </typedef>
+    <define name="_G_HAVE_MMAP" type="number" value="1" />
+    <define name="_G_HAVE_MREMAP" type="number" value="1" />
+    <define name="_G_IO_IO_FILE_VERSION" type="number" value="131073" />
+    <define name="_G_BUFSIZ" type="number" value="8192" />
+  </buffer>
+  <buffer file="/usr/lib/clang/3.6.2/include/stdarg.h">
+    <typedef name="va_list">
+      <typedef name="__builtin_va_list" />
+    </typedef>
+    <define name="__GNUC_VA_LIST" type="number" value="1" />
+    <typedef name="__gnuc_va_list">
+      <typedef name="__builtin_va_list" />
+    </typedef>
+  </buffer>
+  <buffer file="/usr/include/libio.h">
+    <define name="_IO_UNIFIED_JUMPTABLES" type="number" value="1" />
+    <define name="_IOS_INPUT" type="number" value="1" />
+    <define name="_IOS_OUTPUT" type="number" value="2" />
+    <define name="_IOS_ATEND" type="number" value="4" />
+    <define name="_IOS_APPEND" type="number" value="8" />
+    <define name="_IOS_TRUNC" type="number" value="16" />
+    <define name="_IOS_NOCREATE" type="number" value="32" />
+    <define name="_IOS_NOREPLACE" type="number" value="64" />
+    <define name="_IOS_BIN" type="number" value="128" />
+    <define name="_IO_MAGIC" type="number" value="4222418944" />
+    <define name="_OLD_STDIO_MAGIC" type="number" value="4206624768" />
+    <define name="_IO_MAGIC_MASK" type="number" value="4294901760" />
+    <define name="_IO_USER_BUF" type="number" value="1" />
+    <define name="_IO_UNBUFFERED" type="number" value="2" />
+    <define name="_IO_NO_READS" type="number" value="4" />
+    <define name="_IO_NO_WRITES" type="number" value="8" />
+    <define name="_IO_EOF_SEEN" type="number" value="16" />
+    <define name="_IO_ERR_SEEN" type="number" value="32" />
+    <define name="_IO_DELETE_DONT_CLOSE" type="number" value="64" />
+    <define name="_IO_LINKED" type="number" value="128" />
+    <define name="_IO_IN_BACKUP" type="number" value="256" />
+    <define name="_IO_LINE_BUF" type="number" value="512" />
+    <define name="_IO_TIED_PUT_GET" type="number" value="1024" />
+    <define name="_IO_CURRENTLY_PUTTING" type="number" value="2048" />
+    <define name="_IO_IS_APPENDING" type="number" value="4096" />
+    <define name="_IO_IS_FILEBUF" type="number" value="8192" />
+    <define name="_IO_BAD_SEEN" type="number" value="16384" />
+    <define name="_IO_USER_LOCK" type="number" value="32768" />
+    <define name="_IO_FLAGS2_MMAP" type="number" value="1" />
+    <define name="_IO_FLAGS2_NOTCANCEL" type="number" value="2" />
+    <define name="_IO_FLAGS2_USER_WBUF" type="number" value="8" />
+    <define name="_IO_SKIPWS" type="number" value="01" />
+    <define name="_IO_LEFT" type="number" value="02" />
+    <define name="_IO_RIGHT" type="number" value="04" />
+    <define name="_IO_INTERNAL" type="number" value="010" />
+    <define name="_IO_DEC" type="number" value="020" />
+    <define name="_IO_OCT" type="number" value="040" />
+    <define name="_IO_HEX" type="number" value="0100" />
+    <define name="_IO_SHOWBASE" type="number" value="0200" />
+    <define name="_IO_SHOWPOINT" type="number" value="0400" />
+    <define name="_IO_UPPERCASE" type="number" value="01000" />
+    <define name="_IO_SHOWPOS" type="number" value="02000" />
+    <define name="_IO_SCIENTIFIC" type="number" value="04000" />
+    <define name="_IO_FIXED" type="number" value="010000" />
+    <define name="_IO_UNITBUF" type="number" value="020000" />
+    <define name="_IO_STDIO" type="number" value="040000" />
+    <define name="_IO_DONT_CLOSE" type="number" value="0100000" />
+    <define name="_IO_BOOLALPHA" type="number" value="0200000" />
+    <struct name="_IO_jump_t" />
+    <typedef name="_IO_lock_t">
+      <builtin name="void" />
+    </typedef>
+    <struct name="_IO_marker" size="24">
+      <field name="_next" offset="0">
+        <pointer>
+          <struct name="_IO_marker" />
+        </pointer>
+      </field>
+      <field name="_sbuf" offset="8">
+        <pointer>
+          <struct name="_IO_FILE" />
+        </pointer>
+      </field>
+      <field name="_pos" offset="16">
+        <builtin name="int" />
+      </field>
+    </struct>
+    <enum name="__codecvt_result">
+      <item name="__codecvt_ok" value="0" />
+      <item name="__codecvt_partial" value="1" />
+      <item name="__codecvt_error" value="2" />
+      <item name="__codecvt_noconv" value="3" />
+    </enum>
+    <struct name="_IO_FILE" size="216">
+      <field name="_flags" offset="0">
+        <builtin name="int" />
+      </field>
+      <field name="_IO_read_ptr" offset="8">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </field>
+      <field name="_IO_read_end" offset="16">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </field>
+      <field name="_IO_read_base" offset="24">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </field>
+      <field name="_IO_write_base" offset="32">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </field>
+      <field name="_IO_write_ptr" offset="40">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </field>
+      <field name="_IO_write_end" offset="48">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </field>
+      <field name="_IO_buf_base" offset="56">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </field>
+      <field name="_IO_buf_end" offset="64">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </field>
+      <field name="_IO_save_base" offset="72">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </field>
+      <field name="_IO_backup_base" offset="80">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </field>
+      <field name="_IO_save_end" offset="88">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </field>
+      <field name="_markers" offset="96">
+        <pointer>
+          <struct name="_IO_marker" />
+        </pointer>
+      </field>
+      <field name="_chain" offset="104">
+        <pointer>
+          <struct name="_IO_FILE" />
+        </pointer>
+      </field>
+      <field name="_fileno" offset="112">
+        <builtin name="int" />
+      </field>
+      <field name="_flags2" offset="116">
+        <builtin name="int" />
+      </field>
+      <field name="_old_offset" offset="120">
+        <typedef name="__off_t" />
+      </field>
+      <field name="_cur_column" offset="128">
+        <builtin name="unsigned short" />
+      </field>
+      <field name="_vtable_offset" offset="130">
+        <builtin name="signed char" />
+      </field>
+      <field name="_shortbuf" offset="131">
+        <array size="1">
+          <builtin name="char" />
+        </array>
+      </field>
+      <field name="_lock" offset="136">
+        <pointer>
+          <typedef name="_IO_lock_t" />
+        </pointer>
+      </field>
+      <field name="_offset" offset="144">
+        <typedef name="__off64_t" />
+      </field>
+      <field name="__pad1" offset="152">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </field>
+      <field name="__pad2" offset="160">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </field>
+      <field name="__pad3" offset="168">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </field>
+      <field name="__pad4" offset="176">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </field>
+      <field name="__pad5" offset="184">
+        <typedef name="size_t" />
+      </field>
+      <field name="_mode" offset="192">
+        <builtin name="int" />
+      </field>
+      <field name="_unused2" offset="196">
+        <array size="20">
+          <builtin name="char" />
+        </array>
+      </field>
+    </struct>
+    <typedef name="_IO_FILE">
+      <struct name="_IO_FILE" />
+    </typedef>
+    <struct name="_IO_FILE_plus" />
+    <var name="_IO_2_1_stdin_">
+      <todo />
+    </var>
+    <var name="_IO_2_1_stdout_">
+      <todo />
+    </var>
+    <var name="_IO_2_1_stderr_">
+      <todo />
+    </var>
+    <typedef name="__io_read_fn">
+      <function>
+        <return>
+          <typedef name="__ssize_t" />
+        </return>
+        <param>
+          <pointer>
+            <builtin name="void" />
+          </pointer>
+        </param>
+        <param>
+          <pointer>
+            <builtin name="char" />
+          </pointer>
+        </param>
+        <param>
+          <typedef name="size_t" />
+        </param>
+      </function>
+    </typedef>
+    <typedef name="__io_write_fn">
+      <function>
+        <return>
+          <typedef name="__ssize_t" />
+        </return>
+        <param>
+          <pointer>
+            <builtin name="void" />
+          </pointer>
+        </param>
+        <param>
+          <pointer>
+            <builtin name="char" />
+          </pointer>
+        </param>
+        <param>
+          <typedef name="size_t" />
+        </param>
+      </function>
+    </typedef>
+    <typedef name="__io_seek_fn">
+      <function>
+        <return>
+          <builtin name="int" />
+        </return>
+        <param>
+          <pointer>
+            <builtin name="void" />
+          </pointer>
+        </param>
+        <param>
+          <pointer>
+            <typedef name="__off64_t" />
+          </pointer>
+        </param>
+        <param>
+          <builtin name="int" />
+        </param>
+      </function>
+    </typedef>
+    <typedef name="__io_close_fn">
+      <function>
+        <return>
+          <builtin name="int" />
+        </return>
+        <param>
+          <pointer>
+            <builtin name="void" />
+          </pointer>
+        </param>
+      </function>
+    </typedef>
+    <function name="__underflow">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param>
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="__uflow">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param>
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="__overflow">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param>
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+      <param>
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="_IO_getc">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__fp">
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="_IO_putc">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__c">
+        <builtin name="int" />
+      </param>
+      <param name="__fp">
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="_IO_feof">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__fp">
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="_IO_ferror">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__fp">
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="_IO_peekc_locked">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__fp">
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="_IO_flockfile">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param>
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="_IO_funlockfile">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param>
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="_IO_ftrylockfile">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param>
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="_IO_vfscanf">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param>
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+      <param>
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param>
+        <typedef name="__gnuc_va_list" />
+      </param>
+      <param>
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+    </function>
+    <function name="_IO_vfprintf">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param>
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+      <param>
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param>
+        <typedef name="__gnuc_va_list" />
+      </param>
+    </function>
+    <function name="_IO_padn">
+      <return>
+        <typedef name="__ssize_t" />
+      </return>
+      <param>
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+      <param>
+        <builtin name="int" />
+      </param>
+      <param>
+        <typedef name="__ssize_t" />
+      </param>
+    </function>
+    <function name="_IO_sgetn">
+      <return>
+        <typedef name="size_t" />
+      </return>
+      <param>
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+      <param>
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </param>
+      <param>
+        <typedef name="size_t" />
+      </param>
+    </function>
+    <function name="_IO_seekoff">
+      <return>
+        <typedef name="__off64_t" />
+      </return>
+      <param>
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+      <param>
+        <typedef name="__off64_t" />
+      </param>
+      <param>
+        <builtin name="int" />
+      </param>
+      <param>
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="_IO_seekpos">
+      <return>
+        <typedef name="__off64_t" />
+      </return>
+      <param>
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+      <param>
+        <typedef name="__off64_t" />
+      </param>
+      <param>
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="_IO_free_backup_area">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param>
+        <pointer>
+          <typedef name="_IO_FILE" />
+        </pointer>
+      </param>
+    </function>
+  </buffer>
+  <buffer file="/usr/include/stdio.h">
+    <typedef name="off_t">
+      <typedef name="__off_t" />
+    </typedef>
+    <typedef name="ssize_t">
+      <typedef name="__ssize_t" />
+    </typedef>
+    <typedef name="fpos_t">
+      <typedef name="_G_fpos_t" />
+    </typedef>
+    <define name="_IOFBF" type="number" value="0" />
+    <define name="_IOLBF" type="number" value="1" />
+    <define name="_IONBF" type="number" value="2" />
+    <define name="SEEK_SET" type="number" value="0" />
+    <define name="SEEK_CUR" type="number" value="1" />
+    <define name="SEEK_END" type="number" value="2" />
+    <define name="P_tmpdir" type="string" value="/tmp" />
+  </buffer>
+  <buffer file="/usr/include/bits/stdio_lim.h">
+    <define name="L_tmpnam" type="number" value="20" />
+    <define name="TMP_MAX" type="number" value="238328" />
+    <define name="FILENAME_MAX" type="number" value="4096" />
+    <define name="L_ctermid" type="number" value="9" />
+    <define name="FOPEN_MAX" type="number" value="16" />
+  </buffer>
+  <buffer file="/usr/include/stdio.h">
+    <var name="stdin">
+      <todo />
+    </var>
+    <var name="stdout">
+      <todo />
+    </var>
+    <var name="stderr">
+      <todo />
+    </var>
+    <function name="remove">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__filename">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="rename">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__old">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__new">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="renameat">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__oldfd">
+        <builtin name="int" />
+      </param>
+      <param name="__old">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__newfd">
+        <builtin name="int" />
+      </param>
+      <param name="__new">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="tmpfile">
+      <return>
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </return>
+    </function>
+    <function name="tmpnam">
+      <return>
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="tmpnam_r">
+      <return>
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="tempnam">
+      <return>
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </return>
+      <param name="__dir">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__pfx">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fclose">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fflush">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fflush_unlocked">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fopen">
+      <return>
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </return>
+      <param name="__filename">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__modes">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="freopen">
+      <return>
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </return>
+      <param name="__filename">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__modes">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fdopen">
+      <return>
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </return>
+      <param name="__fd">
+        <builtin name="int" />
+      </param>
+      <param name="__modes">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fmemopen">
+      <return>
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </param>
+      <param name="__len">
+        <typedef name="size_t" />
+      </param>
+      <param name="__modes">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="open_memstream">
+      <return>
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </return>
+      <param name="__bufloc">
+        <pointer>
+          <pointer>
+            <builtin name="char" />
+          </pointer>
+        </pointer>
+      </param>
+      <param name="__sizeloc">
+        <pointer>
+          <typedef name="size_t" />
+        </pointer>
+      </param>
+    </function>
+    <function name="setbuf">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="__buf">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="setvbuf">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="__buf">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__modes">
+        <builtin name="int" />
+      </param>
+      <param name="__n">
+        <typedef name="size_t" />
+      </param>
+    </function>
+    <function name="setbuffer">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="__buf">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__size">
+        <typedef name="size_t" />
+      </param>
+    </function>
+    <function name="setlinebuf">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fprintf" variadic="true">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="printf" variadic="true">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="sprintf" variadic="true">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="vfprintf">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__s">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__arg">
+        <typedef name="__gnuc_va_list" />
+      </param>
+    </function>
+    <function name="vprintf">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__arg">
+        <typedef name="__gnuc_va_list" />
+      </param>
+    </function>
+    <function name="vsprintf">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__arg">
+        <typedef name="__gnuc_va_list" />
+      </param>
+    </function>
+    <function name="snprintf" variadic="true">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__maxlen">
+        <typedef name="size_t" />
+      </param>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="vsnprintf">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__maxlen">
+        <typedef name="size_t" />
+      </param>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__arg">
+        <typedef name="__gnuc_va_list" />
+      </param>
+    </function>
+    <function name="vdprintf">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__fd">
+        <builtin name="int" />
+      </param>
+      <param name="__fmt">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__arg">
+        <typedef name="__gnuc_va_list" />
+      </param>
+    </function>
+    <function name="dprintf" variadic="true">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__fd">
+        <builtin name="int" />
+      </param>
+      <param name="__fmt">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fscanf" variadic="true">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="scanf" variadic="true">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="sscanf" variadic="true">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="vfscanf">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__s">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__arg">
+        <typedef name="__gnuc_va_list" />
+      </param>
+    </function>
+    <function name="vscanf">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__arg">
+        <typedef name="__gnuc_va_list" />
+      </param>
+    </function>
+    <function name="vsscanf">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__format">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__arg">
+        <typedef name="__gnuc_va_list" />
+      </param>
+    </function>
+    <function name="fgetc">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="getc">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="getchar">
+      <return>
+        <builtin name="int" />
+      </return>
+    </function>
+    <function name="getc_unlocked">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="getchar_unlocked">
+      <return>
+        <builtin name="int" />
+      </return>
+    </function>
+    <function name="fgetc_unlocked">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fputc">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__c">
+        <builtin name="int" />
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="putc">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__c">
+        <builtin name="int" />
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="putchar">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__c">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="fputc_unlocked">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__c">
+        <builtin name="int" />
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="putc_unlocked">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__c">
+        <builtin name="int" />
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="putchar_unlocked">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__c">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="getw">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="putw">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__w">
+        <builtin name="int" />
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fgets">
+      <return>
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__n">
+        <builtin name="int" />
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="__getdelim">
+      <return>
+        <typedef name="__ssize_t" />
+      </return>
+      <param name="__lineptr">
+        <pointer>
+          <pointer>
+            <builtin name="char" />
+          </pointer>
+        </pointer>
+      </param>
+      <param name="__n">
+        <pointer>
+          <typedef name="size_t" />
+        </pointer>
+      </param>
+      <param name="__delimiter">
+        <builtin name="int" />
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="getdelim">
+      <return>
+        <typedef name="__ssize_t" />
+      </return>
+      <param name="__lineptr">
+        <pointer>
+          <pointer>
+            <builtin name="char" />
+          </pointer>
+        </pointer>
+      </param>
+      <param name="__n">
+        <pointer>
+          <typedef name="size_t" />
+        </pointer>
+      </param>
+      <param name="__delimiter">
+        <builtin name="int" />
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="getline">
+      <return>
+        <typedef name="__ssize_t" />
+      </return>
+      <param name="__lineptr">
+        <pointer>
+          <pointer>
+            <builtin name="char" />
+          </pointer>
+        </pointer>
+      </param>
+      <param name="__n">
+        <pointer>
+          <typedef name="size_t" />
+        </pointer>
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fputs">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="puts">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="ungetc">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__c">
+        <builtin name="int" />
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fread">
+      <return>
+        <typedef name="size_t" />
+      </return>
+      <param name="__ptr">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </param>
+      <param name="__size">
+        <typedef name="size_t" />
+      </param>
+      <param name="__n">
+        <typedef name="size_t" />
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fwrite">
+      <return>
+        <typedef name="size_t" />
+      </return>
+      <param name="__ptr">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </param>
+      <param name="__size">
+        <typedef name="size_t" />
+      </param>
+      <param name="__n">
+        <typedef name="size_t" />
+      </param>
+      <param name="__s">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fread_unlocked">
+      <return>
+        <typedef name="size_t" />
+      </return>
+      <param name="__ptr">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </param>
+      <param name="__size">
+        <typedef name="size_t" />
+      </param>
+      <param name="__n">
+        <typedef name="size_t" />
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fwrite_unlocked">
+      <return>
+        <typedef name="size_t" />
+      </return>
+      <param name="__ptr">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </param>
+      <param name="__size">
+        <typedef name="size_t" />
+      </param>
+      <param name="__n">
+        <typedef name="size_t" />
+      </param>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fseek">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="__off">
+        <builtin name="long" />
+      </param>
+      <param name="__whence">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="ftell">
+      <return>
+        <builtin name="long" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="rewind">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fseeko">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="__off">
+        <typedef name="__off_t" />
+      </param>
+      <param name="__whence">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="ftello">
+      <return>
+        <typedef name="__off_t" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fgetpos">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="__pos">
+        <pointer>
+          <typedef name="fpos_t" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fsetpos">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="__pos">
+        <pointer>
+          <typedef name="fpos_t" />
+        </pointer>
+      </param>
+    </function>
+    <function name="clearerr">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="feof">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="ferror">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="clearerr_unlocked">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="feof_unlocked">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="ferror_unlocked">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="perror">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+  </buffer>
+  <buffer file="/usr/include/bits/sys_errlist.h">
+    <var name="sys_nerr">
+      <todo />
+    </var>
+    <var name="sys_errlist">
+      <todo />
+    </var>
+  </buffer>
+  <buffer file="/usr/include/stdio.h">
+    <function name="fileno">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="fileno_unlocked">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="popen">
+      <return>
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </return>
+      <param name="__command">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="__modes">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="pclose">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="ctermid">
+      <return>
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </return>
+      <param name="__s">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="flockfile">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="ftrylockfile">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="funlockfile">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="__stream">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+  </buffer>
+  <buffer file="tests/stb_image.h">
+    <define name="STBI_VERSION" type="number" value="1" />
+    <enum>
+      <item name="STBI_default" value="0" />
+      <item name="STBI_grey" value="1" />
+      <item name="STBI_grey_alpha" value="2" />
+      <item name="STBI_rgb" value="3" />
+      <item name="STBI_rgb_alpha" value="4" />
+    </enum>
+    <typedef name="stbi_uc">
+      <builtin name="unsigned char" />
+    </typedef>
+    <struct name="41954144" size="24">
+      <field name="read" offset="0">
+        <pointer>
+          <function>
+            <return>
+              <builtin name="int" />
+            </return>
+            <param>
+              <pointer>
+                <builtin name="void" />
+              </pointer>
+            </param>
+            <param>
+              <pointer>
+                <builtin name="char" />
+              </pointer>
+            </param>
+            <param>
+              <builtin name="int" />
+            </param>
+          </function>
+        </pointer>
+      </field>
+      <field name="skip" offset="8">
+        <pointer>
+          <function>
+            <return>
+              <builtin name="void" />
+            </return>
+            <param>
+              <pointer>
+                <builtin name="void" />
+              </pointer>
+            </param>
+            <param>
+              <builtin name="int" />
+            </param>
+          </function>
+        </pointer>
+      </field>
+      <field name="eof" offset="16">
+        <pointer>
+          <function>
+            <return>
+              <builtin name="int" />
+            </return>
+            <param>
+              <pointer>
+                <builtin name="void" />
+              </pointer>
+            </param>
+          </function>
+        </pointer>
+      </field>
+    </struct>
+    <typedef name="stbi_io_callbacks">
+      <struct name="41954144" />
+    </typedef>
+    <function name="stbi_load">
+      <return>
+        <pointer>
+          <typedef name="stbi_uc" />
+        </pointer>
+      </return>
+      <param name="filename">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="x">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="y">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="comp">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="req_comp">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="stbi_load_from_memory">
+      <return>
+        <pointer>
+          <typedef name="stbi_uc" />
+        </pointer>
+      </return>
+      <param name="buffer">
+        <pointer>
+          <typedef name="stbi_uc" />
+        </pointer>
+      </param>
+      <param name="len">
+        <builtin name="int" />
+      </param>
+      <param name="x">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="y">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="comp">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="req_comp">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="stbi_load_from_callbacks">
+      <return>
+        <pointer>
+          <typedef name="stbi_uc" />
+        </pointer>
+      </return>
+      <param name="clbk">
+        <pointer>
+          <typedef name="stbi_io_callbacks" />
+        </pointer>
+      </param>
+      <param name="user">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </param>
+      <param name="x">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="y">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="comp">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="req_comp">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="stbi_load_from_file">
+      <return>
+        <pointer>
+          <typedef name="stbi_uc" />
+        </pointer>
+      </return>
+      <param name="f">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="x">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="y">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="comp">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="req_comp">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="stbi_loadf">
+      <return>
+        <pointer>
+          <builtin name="float" />
+        </pointer>
+      </return>
+      <param name="filename">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="x">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="y">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="comp">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="req_comp">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="stbi_loadf_from_memory">
+      <return>
+        <pointer>
+          <builtin name="float" />
+        </pointer>
+      </return>
+      <param name="buffer">
+        <pointer>
+          <typedef name="stbi_uc" />
+        </pointer>
+      </param>
+      <param name="len">
+        <builtin name="int" />
+      </param>
+      <param name="x">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="y">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="comp">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="req_comp">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="stbi_loadf_from_callbacks">
+      <return>
+        <pointer>
+          <builtin name="float" />
+        </pointer>
+      </return>
+      <param name="clbk">
+        <pointer>
+          <typedef name="stbi_io_callbacks" />
+        </pointer>
+      </param>
+      <param name="user">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </param>
+      <param name="x">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="y">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="comp">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="req_comp">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="stbi_loadf_from_file">
+      <return>
+        <pointer>
+          <builtin name="float" />
+        </pointer>
+      </return>
+      <param name="f">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="x">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="y">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="comp">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="req_comp">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="stbi_hdr_to_ldr_gamma">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="gamma">
+        <builtin name="float" />
+      </param>
+    </function>
+    <function name="stbi_hdr_to_ldr_scale">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="scale">
+        <builtin name="float" />
+      </param>
+    </function>
+    <function name="stbi_ldr_to_hdr_gamma">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="gamma">
+        <builtin name="float" />
+      </param>
+    </function>
+    <function name="stbi_ldr_to_hdr_scale">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="scale">
+        <builtin name="float" />
+      </param>
+    </function>
+    <function name="stbi_is_hdr_from_callbacks">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="clbk">
+        <pointer>
+          <typedef name="stbi_io_callbacks" />
+        </pointer>
+      </param>
+      <param name="user">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </param>
+    </function>
+    <function name="stbi_is_hdr_from_memory">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="buffer">
+        <pointer>
+          <typedef name="stbi_uc" />
+        </pointer>
+      </param>
+      <param name="len">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="stbi_is_hdr">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="filename">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+    </function>
+    <function name="stbi_is_hdr_from_file">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="f">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+    </function>
+    <function name="stbi_failure_reason">
+      <return>
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </return>
+    </function>
+    <function name="stbi_image_free">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="retval_from_stbi_load">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </param>
+    </function>
+    <function name="stbi_info_from_memory">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="buffer">
+        <pointer>
+          <typedef name="stbi_uc" />
+        </pointer>
+      </param>
+      <param name="len">
+        <builtin name="int" />
+      </param>
+      <param name="x">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="y">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="comp">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+    </function>
+    <function name="stbi_info_from_callbacks">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="clbk">
+        <pointer>
+          <typedef name="stbi_io_callbacks" />
+        </pointer>
+      </param>
+      <param name="user">
+        <pointer>
+          <builtin name="void" />
+        </pointer>
+      </param>
+      <param name="x">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="y">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="comp">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+    </function>
+    <function name="stbi_info">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="filename">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="x">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="y">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="comp">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+    </function>
+    <function name="stbi_info_from_file">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="f">
+        <pointer>
+          <typedef name="FILE" />
+        </pointer>
+      </param>
+      <param name="x">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="y">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="comp">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+    </function>
+    <function name="stbi_set_unpremultiply_on_load">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="flag_true_if_should_unpremultiply">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="stbi_convert_iphone_png_to_rgb">
+      <return>
+        <builtin name="void" />
+      </return>
+      <param name="flag_true_if_should_convert">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="stbi_zlib_decode_malloc_guesssize">
+      <return>
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </return>
+      <param name="buffer">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="len">
+        <builtin name="int" />
+      </param>
+      <param name="initial_size">
+        <builtin name="int" />
+      </param>
+      <param name="outlen">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+    </function>
+    <function name="stbi_zlib_decode_malloc_guesssize_headerflag">
+      <return>
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </return>
+      <param name="buffer">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="len">
+        <builtin name="int" />
+      </param>
+      <param name="initial_size">
+        <builtin name="int" />
+      </param>
+      <param name="outlen">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+      <param name="parse_header">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="stbi_zlib_decode_malloc">
+      <return>
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </return>
+      <param name="buffer">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="len">
+        <builtin name="int" />
+      </param>
+      <param name="outlen">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+    </function>
+    <function name="stbi_zlib_decode_buffer">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="obuffer">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="olen">
+        <builtin name="int" />
+      </param>
+      <param name="ibuffer">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="ilen">
+        <builtin name="int" />
+      </param>
+    </function>
+    <function name="stbi_zlib_decode_noheader_malloc">
+      <return>
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </return>
+      <param name="buffer">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="len">
+        <builtin name="int" />
+      </param>
+      <param name="outlen">
+        <pointer>
+          <builtin name="int" />
+        </pointer>
+      </param>
+    </function>
+    <function name="stbi_zlib_decode_noheader_buffer">
+      <return>
+        <builtin name="int" />
+      </return>
+      <param name="obuffer">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="olen">
+        <builtin name="int" />
+      </param>
+      <param name="ibuffer">
+        <pointer>
+          <builtin name="char" />
+        </pointer>
+      </param>
+      <param name="ilen">
+        <builtin name="int" />
+      </param>
+    </function>
+  </buffer>
+</root>

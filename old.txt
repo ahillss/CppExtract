@@ -1,0 +1,321 @@
+
+// #include <llvm/Support/CrashRecoveryContext.h>
+// #include <llvm/Support/MemoryBuffer.h>
+// #include <clang/Parse/Parser.h>
+// #include <clang/Sema/Sema.h>
+#include <clang/AST/Stmt.h>
+#include <clang/Sema/SemaConsumer.h>
+
+string old_getStatementString(Stmt *stmt) {
+  stringstream ss;
+
+  if(IntegerLiteral *a=dyn_cast<IntegerLiteral>(stmt)) {
+    ss << a->getValue().toString(10,true);
+  } else if(BinaryOperator *a=dyn_cast<BinaryOperator>(stmt)) {
+    ss << "(op \"" << string(a->getOpcodeStr()) << "\" "
+       << old_getStatementString(a->getLHS()) << " "
+       << old_getStatementString(a->getRHS()) << ")";
+  } else if(UnaryOperator *a=dyn_cast<UnaryOperator>(stmt)) {
+    ss << "(op \"" << string(UnaryOperator::getOpcodeStr(a->getOpcode()))
+       << "\" " << old_getStatementString(a->getSubExpr()) << ")";
+  } else if(CallExpr *a=dyn_cast<CallExpr>(stmt)) {
+    ss << "(call " << old_getStatementString(a->getCallee());
+
+    for(CallExpr::arg_iterator i=a->arg_begin();i!=a->arg_end();++i) {
+      ss << " " << old_getStatementString(*i);
+    }
+
+    ss << ")";
+  } else if(CastExpr *a=dyn_cast<CastExpr>(stmt)) {
+    ss << old_getStatementString(a->getSubExpr());
+  } else if(ParenExpr *a=dyn_cast<ParenExpr>(stmt)) {
+    ss << old_getStatementString(a->getSubExpr());
+  } else if(DeclRefExpr *a=dyn_cast<DeclRefExpr>(stmt)) {
+    ss << "(ref \"" << a->getNameInfo().getAsString() << "\")";
+  } else if(StringLiteral *a=dyn_cast<StringLiteral>(stmt)) {
+    if(a->isAscii()) {
+      ss << "\"" << fixstring(a->getString().str()) << "\"";
+    } else {
+      ss << "\"todo\"";
+    }
+  } else if(MaterializeTemporaryExpr *a=
+	    dyn_cast<MaterializeTemporaryExpr>(stmt)) {
+    ss << old_getStatementString(a->GetTemporaryExpr());
+
+  } else if(CXXConstructExpr *a=dyn_cast<CXXConstructExpr>(stmt)) {
+    for(CXXConstructExpr::arg_iterator i=a->arg_begin();i!=a->arg_end();
+	++i) {
+      if(i!=a->arg_begin()) {ss << " ";}
+      ss << old_getStatementString(*i);
+    }
+  } else if(ArraySubscriptExpr *a=dyn_cast<ArraySubscriptExpr>(stmt)) {
+    //todo
+  } else {
+    ss << stmt->getStmtClassName();
+  }
+
+  return ss.str();
+}
+
+string old_outputMacro(CompilerInstance &ci, const IdentifierInfo *id,
+		       const MacroInfo *mi, Stmt *body) {
+  string macroName= id->getName().data();
+
+  cout << "output " << id->getName().data() << endl;
+  if(mi->isFunctionLike()) {
+    stringstream ss;
+    ss << "(define-function \""<<macroName<<"\" (";
+
+    for(MacroInfo::arg_iterator i=mi->arg_begin();
+    	i!=mi->arg_end();i++) {
+      if(i!=mi->arg_begin()) ss<<" ";
+      ss << "\"" << (*i)->getName().data() << "\"";
+    }
+
+    ss << ")";
+
+    for(Stmt::child_iterator i=body->child_begin();
+    	i!=body->child_end();i++) {
+      if(i!=body->child_begin()) { ss << " ";}
+      ss << old_getStatementString(*i);
+    }
+
+    ss << ")";
+    return  ss.str();
+
+  }
+}
+
+Stmt *old_parseMacro(CompilerInstance &ci, Parser *parser,
+		     const IdentifierInfo *id, const MacroInfo *mi) {
+  if(mi->isVariadic()) {return 0;}
+
+  string macroName= id->getName().data();
+  stringstream s;
+  s << "template <class T> ";
+  s << "void mytempfunc_"<<macroName<<"(";
+
+  for(MacroInfo::arg_iterator i=mi->arg_begin();
+      i!=mi->arg_end();i++) {
+    if(i!=mi->arg_begin()) s<<",";
+    //s << "void* ";
+    s << "T ";
+    s << (*i)->getName().data();
+  }
+
+  //uintptr_t
+  s << "){"<<macroName;
+
+  if(mi->isFunctionLike()) {
+    s<< "(";
+
+    for(MacroInfo::arg_iterator i=mi->arg_begin();
+	i!=mi->arg_end();i++) {
+      if(i!=mi->arg_begin()) s<<",";
+      s << (*i)->getName().data();
+    }
+
+    s<<")";
+  }
+
+  s<<";}";
+
+  cout << "parsing1 " << id->getName().data() << endl;
+  if(ci.getDiagnostics().hasFatalErrorOccurred()
+     || ci.getDiagnostics().hasErrorOccurred()
+     || ci.getDiagnostics().hasUnrecoverableErrorOccurred()
+     || ci.getDiagnostics().hasErrorOccurred()
+     || ci.getDiagnostics().hasErrorOccurred()) {
+    return 0;
+  }
+}
+
+
+   
+   std::string src=  "void fffff() {"+macroName + "};";
+   std::string bufn=macroName+"_buffer";
+
+   llvm::MemoryBuffer *buf = llvm::MemoryBuffer::getMemBufferCopy(src,bufn);
+   clang::FileID fid=ci->getSourceManager().createFileIDForMemBuffer(buf);
+
+   
+   const clang::DirectoryLookup *dir=ci->getPreprocessor().GetCurDirLookup();
+   clang::SourceLocation loc2;
+   ci->getPreprocessor().EnterSourceFile(fid,dir,loc2);
+
+    parser2.SkipMalformedDecl();
+
+   clang::Parser::DeclGroupPtrTy adecl;
+   parser2.ParseTopLevelDecl(adecl);
+
+
+   ci->getPreprocessor().EndSourceFile();
+
+   
+   if(!adecl) {
+     std::cerr << "Ignoring from \"" << bufferName << "\": "
+               << macroName << ", failed to parse.\n";
+      return;
+
+
+   }
+    clang::FunctionDecl *dd=0;
+
+   
+  for(clang::DeclGroupRef::iterator i=adecl.get().begin();i!=adecl.get().end();i++) {
+    std::cout << macroName << " " << (*i) << std::endl;
+    if(dd = clang::dyn_cast<clang::FunctionDecl>(*i)) {
+      break;
+    }
+   }
+
+   
+   clang::Decl *d=adecl.get().getSingleDecl();
+
+   if(!d) {
+     std::cerr << "Ignoring from \"" << bufferName << "\": "
+               << macroName << ", not a decl.\n";
+     return;
+   }
+
+
+
+    
+   clang::FunctionDecl *dd = clang::dyn_cast<clang::FunctionDecl>(d);
+
+   if(!dd) {
+     std::cerr << "Ignoring from \"" << bufferName << "\": "
+               << macroName << ", incorrect decl.\n";
+     return;
+   }
+
+   
+   clang::Stmt *body=dd->getBody();
+
+   if(body->child_begin() == body->child_end()) {
+     std::cerr << "Ignoring from \"" << bufferName << "\": "
+               << macroName << ", no body.\n";
+     return;
+   }
+
+   
+   clang::Stmt::child_iterator it=body->child_begin();
+   clang::Expr *e=0;
+
+   for(e=clang::dyn_cast<clang::Expr>(*it);it!=body->child_end();it++);
+
+   if(!e) {
+     std::cerr << "Ignoring from \"" << bufferName << "\": "
+               << macroName << ", no expr.\n";
+     return;
+   }
+
+   if(!e->isEvaluatable(ci->getASTContext())) {
+     std::cerr << "Ignoring from \"" << bufferName << "\": "
+               << macroName << ", not evaluable.\n";
+     return;
+   }
+
+   clang::Expr::EvalResult result;
+
+   if(!e->isRValue() || !e->EvaluateAsRValue(result,ci->getASTContext())) {
+     std::cerr << "Ignoring from \"" << bufferName << "\": "
+               << macroName << ", not r value or evaluable.\n";
+     return;
+   }
+
+   
+   NodeOutput *node= out->addNode("define");
+   node->addAttrib("name",macroName);
+
+   
+   std::string resultStr=result.Val.getAsString(ci->getASTContext(), e->getType());
+
+   if(resultStr.length()>2 &&
+      resultStr[0]=='&' &&
+      resultStr[1]=='"' &&
+      resultStr[resultStr.length()-1]=='"') {
+     node->addAttrib("type","string");
+     node->addAttrib("value",resultStr.substr(2,resultStr.length()-3));
+   } else {
+     if(result.Val.isInt()) {
+       node->addAttrib("type","integer");
+       node->addAttrib("value",resultStr);
+     } else if(result.Val.isFloat()) {
+       node->addAttrib("type","float");
+       node->addAttrib("value",resultStr);
+     } else {
+       node->addAttrib("type","other");
+       node->addAttrib("value",resultStr);
+     }
+   }
+
+   clang::ASTContext astContext2(ci->getLangOpts(), ci->getPreprocessor().getSourceManager(),
+                             &ci->getTarget(), ci->getPreprocessor().getIdentifierTable(),
+                             ci->getPreprocessor().getSelectorTable(), ci->getPreprocessor().getBuiltinInfo(),
+                             size_reserve=
+ 0);
+
+   create a parser to parse macros
+   clang::ASTConsumer consumer2;
+   ci->resetAndLeakASTContext ();
+   clang::Sema sema2(ci->getPreprocessor(),ci->getASTContext (),consumer2);
+   llvm::CrashRecoveryContextCleanupRegistrar<clang::Sema> semaClean2(&sema2);
+   sema2.Initialize();
+   sema2.getPreprocessor().EnterMainSourceFile();
+
+   clang::Parser parser2(ci->getPreprocessor(),sema2,false);
+   llvm::CrashRecoveryContextCleanupRegistrar<clang::Parser> parserClean2(&parser2);
+   parser2.Initialize();
+
+   
+
+private:
+  std::string name;
+  std::list<clang::Token> tokens;
+public:
+  MyMacro(std::string name,std::list<clang::Token> tokens,clang::FullSourceLoc loc)
+    : MyObject(loc),name(name),tokens(tokens) {}
+
+  const std::string &getName() {return name;}
+  const std::list<clang::Token> &getTokens() {return tokens;}
+
+
+  //
+  ci->getPreprocessor().enableIncrementalProcessing();
+  ci->getDiagnostics().setSuppressAllDiagnostics(true);
+  ci->getDiagnostics().setErrorsAsFatal(false);
+  ci->getDiagnostics().setIgnoreAllWarnings(true);
+  clang::ASTConsumer consumer2;
+  clang::Sema sema2(ci->getPreprocessor(),ci->getASTContext (),consumer2);
+  llvm::CrashRecoveryContextCleanupRegistrar<clang::Sema> semaClean2(&sema2);
+  sema2.Initialize();
+  sema2.getPreprocessor().EnterMainSourceFile();
+
+  clang::Parser parser2(ci->getPreprocessor(),sema2,false);
+  llvm::CrashRecoveryContextCleanupRegistrar<clang::Parser> parserClean2(&parser2);
+  parser2.Initialize();
+
+  std::string bufn=macroName+"_buffer";
+  std::string src= "1+4;";//int aAa"+macroName + "=5;";
+  llvm::MemoryBuffer *buf = llvm::MemoryBuffer::getMemBufferCopy(src,bufn);
+  clang::FileID fid=ci->getSourceManager().createFileIDForMemBuffer(buf);
+
+  const clang::DirectoryLookup *dir=ci->getPreprocessor().GetCurDirLookup();
+  clang::SourceLocation loc2;
+  ci->getPreprocessor().EnterSourceFile(fid,dir,loc2);
+
+  clang::ExprResult exprRes= parser2.ParseExpression();
+
+  if(!exprRes.isUsable ()) {
+    std::cout << macroName << " " << exprRes.get() << " not useable\n";
+  }
+
+  // clang::Parser::DeclGroupPtrTy adecl;
+  // parser2.ParseTopLevelDecl(adecl);
+
+
+  ci->getPreprocessor().EndSourceFile();
+
+
+  // }
