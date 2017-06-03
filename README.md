@@ -1,4 +1,4 @@
-####CppExtract
+# CppExtract
 
 Requires LLVM/CLANG.
 
@@ -8,7 +8,7 @@ Only tested on Linux, but should be cross platform (the LLVM_PREFIX define might
 
 LLVM/CLANG version last tested on was 3.6.2-1/3.6.2-1.
 
-######Options:
+## Options:
 * -I include paths
 * -D define macros
 * -U undefine macros
@@ -16,7 +16,7 @@ LLVM/CLANG version last tested on was 3.6.2-1/3.6.2-1.
 * --sxml Output as S-Expr XML
 * source1 source2 sourceN...
 
-######TODO:
+## TODO:
 * handle const types (currently not labelled as such)
 * support c++11 (add cli option)
 * C++ templates
@@ -24,7 +24,7 @@ LLVM/CLANG version last tested on was 3.6.2-1/3.6.2-1.
 * evaluate some macro expressions
 * function/method bodies, global variable declarations.
 
-######Example:
+## Example:
 * [stb_image.h](tests/stb_image.h)
 * [stb_image.xml](tests/stb_image.xml)
 
